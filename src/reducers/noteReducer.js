@@ -17,7 +17,7 @@ const noteReducer = (state = [], action) => {
 }
 
 const generateId = () => {
-  Math.floor(Math.random() * 100000);
+  return Math.floor(Math.random() * 100000);
 }
 
 export const createNote = (content) => {
@@ -32,6 +32,7 @@ export const createNote = (content) => {
 }
 
 export const toggleImportanceOf = (id) => {
+  console.log(id, 'id')
   return {
     type: 'TOGGLE_IMPORTANCE',
     payload: { id }
