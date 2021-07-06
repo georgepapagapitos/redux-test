@@ -11,6 +11,7 @@ const App = () => {
   useEffect(() => {
     dispatch(initializeNotes());
   }, [dispatch]);
+
   return (
     <div>
       <AddNoteForm />

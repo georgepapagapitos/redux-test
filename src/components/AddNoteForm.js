@@ -4,9 +4,6 @@ import { createNote } from '../reducers/noteReducer';
 
 const AddNoteForm = (props) => {
 
-  console.log('createNote', createNote)
-  console.log('props.createNote', props.createNote)
-
   const addNote = async (event) => {
     event.preventDefault();
     const content = event.target.note.value;
